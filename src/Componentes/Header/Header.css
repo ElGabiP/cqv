@@ -2,3 +2,11 @@
   color: rgb(108, 222, 108);
   text-shadow: rgb(104, 180, 78) 0px 0px 1rem;
 }
+.navbar-toggler{
+  box-shadow: 0px 0px 0.5rem lime;
+}
+
+.menu-icon{
+  color: lime;
+}
+
