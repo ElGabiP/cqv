@@ -19,7 +19,7 @@ export const Logo = () => {
         </svg>
       </div>
       <div className="logo-y-lema">
-        <div class="logo">CQV</div>
+        <div class="logo resplandor">CQV</div>
         <div class="lema">Con Qué Vicio</div>
       </div>
     </div>
