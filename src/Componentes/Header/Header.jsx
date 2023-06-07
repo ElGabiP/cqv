@@ -1,44 +1,34 @@
 import { Logo } from '../Logo/Logo';
-import { CiMenuBurger } from "react-icons/ci";
 import "./Header.css";
-
+import {ImSearch} from "react-icons/im";
 export const Header = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand navbar-dark navbar-bg ">
+      <div class="container-fluid d-flex ">
+        <a class="navbar-brand " href="#">
           <Logo />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <CiMenuBurger className='menu-icon'/> 
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
+       
+        <div class="navbar-collapse" id="navbarSupportedContent">
+        
+          <form class="d-flex mx-auto w-75">
+            <input class="form-control me-2" type="search" placeholder="Con que te quieres enviciar hoy?" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit"><ImSearch/></button>
           </form>
+          <div class="nav-dextop d-sm-none d-md-block">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link "  href="#">Genero</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Plataforma</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" >Login</a>
+        </li>
+      </ul>
+
+          </div>
         </div>
       </div>
     </nav>

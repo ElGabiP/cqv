@@ -3,9 +3,9 @@ import "./Logo.css";
 export const Logo = () => {
   return (
     <div class="contenedor">
-      <div class="glass rotation">
+      <div class="glass rotation sombra">
         <svg
-          class="sombra"
+         
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 490 490"
           preserveAspectRatio="xMidYMid meet"
@@ -20,7 +20,7 @@ export const Logo = () => {
       </div>
       <div className="logo-y-lema">
         <div class="logo resplandor">CQV</div>
-        <div class="lema">Con Qué Vicio</div>
+      
       </div>
     </div>
   );

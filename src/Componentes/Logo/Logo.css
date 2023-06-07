@@ -8,13 +8,13 @@
 }
 
 .glass {
-  width: 4rem;
+  width: 2rem;
   stroke: lime;
   padding: 1%;
 }
 
 .sombra {
-  filter: drop-shadow(0px 0px 1rem lime);
+  filter: drop-shadow(0px 0px 2rem lime);
   box-shadow: none !important ;
 }
 
@@ -33,7 +33,7 @@
 
 .logo {
   font-weight: 600;
-  font-size: 5rem ;
+  font-size: 3rem ;
   text-shadow: 0px 0px 1rem lime;
   will-change: filter;
   transition: filter 1s ease;
@@ -44,8 +44,8 @@
 }
 
 .lema {
-  font-size: 1rem;
-  margin-top: -1.5rem;
+  font-size: 0.9rem;
+  margin-top: -0.6rem;
   align-self: center;
 }
 
