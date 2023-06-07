@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*GLOBALES*/
+.fuente-principal{
+  font-family: 'Rajdhani', sans-serif; /* valores 400 500 600 700*/
+} 
+
+.fuente-secundaria{
+  font-family: 'Roboto', sans-serif; /* valores 300 400 500 700 */
+}
+
+.light{
+  font-weight: 300;
+}
+.regular{
+  font-weight: 400;
+}
+.medium{
+  font-weight: 500;
+}
+.semi-bold{
+  font-weight: 600;
+}
+.bold{
+  font-weight: 700;
+}
 .App {
   text-align: center;
 }
