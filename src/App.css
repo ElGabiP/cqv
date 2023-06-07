@@ -2,11 +2,11 @@
 
 /*GLOBALES*/
 .fuente-principal{
-  font-family: 'Rajdhani', sans-serif; /* valores 400 500 600 700*/
-} 
+  font-family: 'Rajdhani', sans-serif; 
+}
 
 .fuente-secundaria{
-  font-family: 'Roboto', sans-serif; /* valores 300 400 500 700 */
+  font-family: 'Roboto', sans-serif;
 }
 
 .light{
