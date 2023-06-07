@@ -1,14 +1,16 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import { Inicio } from './Paginas/Inicio/Inicio';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Inicio/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
+      
 export default App;

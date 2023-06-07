@@ -2,7 +2,7 @@
 
 /*GLOBALES*/
 .fuente-principal{
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Rajdhani', sans-serif; 
 }
 
 .fuente-secundaria{
@@ -24,7 +24,6 @@
 .bold{
   font-weight: 700;
 }
-
 .App {
   text-align: center;
 }
