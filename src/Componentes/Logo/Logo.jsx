@@ -9,7 +9,7 @@ export const Logo = () => {
         <div className="logo resplandor">
           <span>C</span>
           <ImSearch className="rotation lupa"/>
-          <span>Q</span>
+          <span>V</span>
         </div>
       </div>
     </div>
