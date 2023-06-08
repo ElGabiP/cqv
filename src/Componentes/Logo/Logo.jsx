@@ -1,26 +1,16 @@
 import "./Logo.css";
-
+import {ImSearch} from 'react-icons/im'
 export const Logo = () => {
   return (
-    <div class="contenedor">
-      <div class="glass rotation sombra">
-        <svg
-         
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 490 490"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <path
-            fill="none"
-            stroke-width="36"
-            stroke-linecap="round"
-            d="m280,278a153,153 0 1,0-2,2l170,170m-91-117 110,110-26,26-110-110"
-          />
-        </svg>
+    <div className="contenedor">
+      <div className="glass rotation sombra">
       </div>
-      <div className="logo-y-lema">
-        <div class="logo resplandor">CQV</div>
-      
+      <div className="logo-y-lema" title="Con Que Vicio">
+        <div className="logo resplandor">
+          <span>C</span>
+          <ImSearch className="rotation lupa"/>
+          <span>V</span>
+        </div>
       </div>
     </div>
   );
