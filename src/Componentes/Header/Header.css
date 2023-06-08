@@ -7,7 +7,8 @@
 }
 
 .menu-icon {
-  color:#fff;
+  color:lime;
+  margin:0%
  
 }
 .navbar-toggler {
@@ -50,4 +51,12 @@
   color:lime !important
 }
 
+.xxx{
+  justify-content: space-between;
+  margin-right: 20px !important;
+ padding:0px !important;
+}
 
+.h{
+  align-content: center;
+}

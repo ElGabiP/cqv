@@ -6,27 +6,28 @@ import "./Navbar.css";
 
 export const Navbar = () => {
   return (
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link " href="#">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
+      <li class="nav-item xxx">
+        <a class="navegacion-icono" href="#">
           < BiCategory />
         </a>
-        <p>Generos</p>
+        <p className= "fuente-principal regular">Generos</p>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li class="nav-item xxx">
+        <a class="navegacion-icono" href="#">
           <FaGamepad />
         </a>
-        <p>Plataforma</p>
+        <p className= "fuente-principal regular">Plataforma</p>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
+      <li class="nav-item xxx ">
+        <a class="navegacion-icono" href="#">
           <BsFillPersonFill />
         </a>
-        <p>Login</p>
+        <p className= "fuente-principal regular text-center">Login</p>
       </li>
     </ul>
-  );
+    
+    );
 };
 
 
