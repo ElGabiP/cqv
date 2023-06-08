@@ -4,7 +4,6 @@ import { Header } from "./Componentes/Header/Header";
 import { Inicio } from "./Paginas/Inicio/Inicio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import { Footer } from "./Componentes/Footer/Footer";
 
 function App() {
   return (
@@ -13,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />}></Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

@@ -3,7 +3,8 @@
 /*GLOBALES*/
 :root{
   --color-primario:lime;
-  --color-secundario:#161645; 
+  --color-secundario:#161645;
+  --color-terciario:#e6e6e6; 
 }
 .fuente-principal{
   font-family: 'Rajdhani', sans-serif; 
