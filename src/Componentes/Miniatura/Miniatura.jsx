@@ -6,7 +6,6 @@ export const Miniatura = ({ objetoJuego }) => {
 
   return (
     <div key={juego.id} className="contenido_miniatura">
-      <p>Los mas Buscados</p>
       <div className="box">
         <img className="img_miniatura" src={juego.background_image} alt={juego.name}/>
       </div>
