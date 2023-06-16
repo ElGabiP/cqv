@@ -1,39 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import "./Carrusel.css";
 
-import { juegosApi } from "../../Utilidades/api";
 
-export const Carrusel = () => {
-
-  const [sliders, setSliders] = useState(null);
-
-  useEffect(() => {
-    if (sliders == null) {
-      getSliders();
-    }
-  }, [])
-
-  const getSliders = async () => {
-    const results = [];
-    await juegosApi('games', { page_size: 5 }).then(res => {
-      const masBuscado = getDataAleatoria(res);
-      results.push({ ...masBuscado, action: 'Más Buscado' });
-    })
-    await juegosApi('games', { page_size: 5, ordering: 'rating' }).then(res => {
-      const mejorValorado = getDataAleatoria(res);
-      results.push({ ...mejorValorado, action: 'Mejor Valorado' });
-    });
-
-    await juegosApi('games', { page_size: 5, ordering: 'rating' }).then(res => {
-      const masNuevo = getDataAleatoria(res);
-      results.push({ ...masNuevo, action: 'Más Nuevo' });
-    });
-    setSliders(results);
-  }
-
-  const getDataAleatoria = (data) => {
-    return data[Math.floor(Math.random() * data.length)];
-  }
+export const Carrusel = ({sliders}) => {
 
   if (sliders != null && sliders.length > 0) {
     return (
