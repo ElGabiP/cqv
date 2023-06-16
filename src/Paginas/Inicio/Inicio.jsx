@@ -1,4 +1,5 @@
 import "./Inicio.css";
+import {Carrusel} from "../../Componentes/Carrusel/Carrusel";
 import { useState, useEffect } from "react";
 import { juegosApi } from "../../Utilidades/api";
 import { CarruselMiniatura } from "../../Componentes/CarruselMiniatura/CarruselMiniatura";
@@ -31,7 +32,8 @@ export const Inicio = () => {
     }, [masBuscados])
 
     return (
-        <>
+        <> 
+        <Carrusel/>
             {/* Los más buscados */
                 masBuscados.length > 0 ?
                     <>
