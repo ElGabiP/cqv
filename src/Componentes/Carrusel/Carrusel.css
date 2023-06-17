@@ -114,9 +114,9 @@
 }
 
 .btn-carrusel {
-    color: #0bf4f3;
-    box-shadow: 0 0 5px #0bf4f3, 0 0 5px #0bf4f3 inset;
-    border: 1px solid #0bf4f3;
+    color: lime;
+    box-shadow: 0 0 5px lime, 0 0 5px lime inset;
+    border: 1px solid lime;
     z-index: 1;
 }
 
@@ -130,6 +130,7 @@
     z-index: -1;
     box-shadow: 0 0 5px #0bf4f3, 0 0 5px #0bf4f3 inset;
     transition: all 0.3s ease;
+    
 }
 
 .btn-carrusel:hover {}

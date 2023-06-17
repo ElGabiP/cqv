@@ -3,6 +3,7 @@ import { Carrusel } from "../../Componentes/Carrusel/Carrusel";
 import { useState, useEffect } from "react";
 import { juegosApi } from "../../Utilidades/api";
 import { CarruselMiniatura } from "../../Componentes/CarruselMiniatura/CarruselMiniatura";
+import { LogoCarga } from "../../Componentes/Logo/LogoCarga";
 
 export const Inicio = () => {
 
@@ -44,7 +45,9 @@ export const Inicio = () => {
     }
 
     if (cargando) {
-        return (<h1>Cargando</h1>)
+        return (
+            <LogoCarga/>
+        )
     } else {
         return (
             <>

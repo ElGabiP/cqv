@@ -1,3 +1,7 @@
+.navbar {
+  z-index: 2;
+}
+
 .navbar-toggler-icon {
   color: rgb(108, 222, 108);
   text-shadow: rgb(104, 180, 78) 0px 0px 1rem;
