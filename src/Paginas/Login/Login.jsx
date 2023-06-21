@@ -1,7 +1,8 @@
 import { React } from "react";
 import { LogoCarga } from "../../Componentes/Logo/LogoCarga";
-import "./Generos.css"
+import "./Login.css" ;
 
-export const Generos = () => {
-  return <LogoCarga />;
-};
+export const Login = () => {
+    return <LogoCarga />;
+  };
+  

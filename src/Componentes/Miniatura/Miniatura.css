@@ -4,6 +4,14 @@
     text-align: center;
 }
 
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primario);
+    margin: 2%;
+    padding: 3%;
+}
+ 
+
 .box{
     width: 190px;
     height: 160px;
@@ -24,6 +32,8 @@
     margin-top: 3px;
     font-size: 14px;
 }
+
+
 
 @media (max-width:480px)  {
     .box{

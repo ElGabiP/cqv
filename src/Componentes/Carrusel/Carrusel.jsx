@@ -10,12 +10,12 @@ export const Carrusel = ({sliders}) => {
         <div className="carousel-inner">
           {
             sliders.map((slider, key) => (
-              <div key={key} className={key === 1 ? 'carousel-item active' : 'carousel-item'}>
+              <div key={key} className={key === 1 ? 'carousel-item active' : 'carousel-item'} >
                 <div class="carousel-caption">
                   <h5>{slider.name}</h5>
                   <p><button className="btn-carrusel">{slider.action}</button></p>
                 </div>
-                <img src={slider.background_image} alt={slider.name} />
+                <img src={slider.background_image} alt={slider.name} className="d-block w-100" />
               </div>
             ))
           }

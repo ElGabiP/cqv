@@ -20,13 +20,17 @@ export const Navbar = () => {
         <a className="navegacion-icono" href="#">
           <FaGamepad />
         </a>
-        <p className= "fuente-principal regular">Plataforma</p>
+        <p className= "fuente-principal regular">
+        <Link to={"/plataformas"}>Plataformas</Link>
+        </p>
       </li>
       <li className="nav-item icon ">
         <a className="navegacion-icono" href="#">
           <BsFillPersonFill />
         </a>
-        <p className= "fuente-principal regular text-center">Login</p>
+        <p className= "fuente-principal regular text-center">
+        <Link to={"/login"}>Login</Link>
+        </p>
       </li>
     </ul>
     
