@@ -1,0 +1,60 @@
+.detalle {
+    padding: 8px 20px 35px;
+}
+
+.detalle .header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+    padding-bottom: 8px;
+}
+
+.detalle .header button {
+    border: none;
+    background: none;
+}
+
+.favorito {
+    color: #cfcb00;
+}
+
+.megusta {
+    color: #0b98ff;
+}
+
+.detalle .header .interaccion {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.detalle .header .interaccion svg:first-child {
+    margin-right: 0px;
+}
+
+.detalle p {
+    color: #464646;
+}
+
+.detalle h1 {
+    font-size: 25px;
+    color: var(--color-secundario);
+    margin: 10px 0;
+}
+
+.detalle img {
+    width: 100%;
+}
+
+.iconos-plataformas {
+    margin: 15px 0 10px;
+    display: flex;
+    flex-flow: row;
+    font-size: 30px;
+}
+
+.iconos-plataformas svg:first-child {
+    margin-right: 8px;
+}

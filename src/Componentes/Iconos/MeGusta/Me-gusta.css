@@ -1,0 +1,19 @@
+.icono {
+    margin: 0 10px;
+}
+
+.like.anim .icono {
+    color: #007eff;
+}
+
+.like .borde span {
+    border: 1px solid #007eff;
+}
+
+.like.anim .satellite span:nth-child(1) {
+    background: #007eff;
+}
+
+.like .spark span {
+    background: #007eff;
+}
