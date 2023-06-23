@@ -1,6 +1,6 @@
-import { React } from "react";
-import "./LogoCarga.css";
 import { Logo } from "./Logo";
+import "./LogoCarga.css";
+
 
 export const LogoCarga = () => {
   return (

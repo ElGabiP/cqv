@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./Miniatura.css";
 import { Link } from "react-router-dom";
+import "./Miniatura.css";
 
 export const Miniatura = ({ objetoJuego }) => {
   const [juego, setJuego] = useState(objetoJuego);

@@ -1,7 +1,8 @@
 import { Logo } from '../Logo/Logo';
-import "./Header.css";
 import {ImSearch} from "react-icons/im";
 import {Navbar} from "../Navbar/Navbar";
+import "./Header.css";
+
 export const Header = () => {
   return (
     <nav className="navbar navbar-expand navbar-dark navbar-bg ">

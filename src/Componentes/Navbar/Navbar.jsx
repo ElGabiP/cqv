@@ -1,9 +1,9 @@
-import React from "react";
 import {BiCategory } from "react-icons/bi";
 import {FaGamepad} from "react-icons/fa";
 import {BsFillPersonFill} from "react-icons/bs";
-import "./Navbar.css";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
+
 
 export const Navbar = () => {
   return (
