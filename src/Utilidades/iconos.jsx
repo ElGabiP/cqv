@@ -5,27 +5,27 @@ import { SiNintendo, SiApplearcade } from 'react-icons/si';
 const iconos = [
     {
         id: 1,
-        icono: <FaXbox />
+        icono: <FaXbox key="1" />
     },
     {
         id: 4,
-        icono: <FaWindows />
+        icono: <FaWindows key="4" />
     },
     {
         id: 21,
-        icono: <AiFillAndroid />
+        icono: <AiFillAndroid key="21" />
     },
     {
         id: 3,
-        icono: <FaApple />
+        icono: <FaApple key="3" />
     },
     {
         id: 7,
-        icono: <SiNintendo />
+        icono: <SiNintendo key="7" />
     },
     {
         id: 28,
-        icono: <SiApplearcade />
+        icono: <SiApplearcade key="28" />
     },
 ]
 
