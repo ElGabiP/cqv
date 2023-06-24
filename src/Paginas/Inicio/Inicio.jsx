@@ -16,18 +16,36 @@ export const Inicio = () => {
     const getJuegos = async () => {
         const sliderRes = [];
 
-        /* Se llena la lista con los mas buscados */
-        const data1 = await juegosApi('games', { page_size: 8 });
+        /* Primero se consulta si existe en el sessionStorage */
+        let data1 = JSON.parse(sessionStorage.getItem('masBuscados'));
+        if (!data1) {
+            /* Si no existe entonces lo vamos a buscar a la API */
+            data1 = await juegosApi('games', { page_size: 8 });
+            /* Una vez tenemos el resultado lo guardamos en el sessionStorage */
+            sessionStorage.setItem('masBuscados', JSON.stringify(data1));
+        }
+        /* Ahora lo guardamos en la variable, notese que independientemente de
+        /* si se consigue la data en el sessionStorage o en la api, el resultado 
+        /* siempre lo pasamos a la variable
+        */
         setMasBuscados(data1);
         sliderRes.push({ ...getDataAleatoria(data1), action: 'Más Buscado' });
 
         /* Ahora buscamos los mejor valorados */
-        const data2 = await juegosApi('games', { page_size: 8, ordering: 'rating' });
+        let data2 = JSON.parse(sessionStorage.getItem('mejorValorados'));
+        if (!data2) {
+            data2 = await juegosApi('games', { page_size: 8, ordering: 'rating' });
+            sessionStorage.setItem('mejorValorados', JSON.stringify(data2));
+        }
         setValorados(data2);
         sliderRes.push({ ...getDataAleatoria(data2), action: 'Mejor Valorado' });
 
         /* Finalmente llenamos la lista de los mas nuevos */
-        const data3 = await juegosApi('games', { page_size: 8, ordering: 'created' });
+        let data3 = JSON.parse(sessionStorage.getItem('masNuevos'));
+        if (!data3) {
+            data3 = await juegosApi('games', { page_size: 8, ordering: 'created' });
+            sessionStorage.setItem('masNuevos', JSON.stringify(data3));
+        }
         setNuevos(data3);
         sliderRes.push({ ...getDataAleatoria(data3), action: 'Más Nuevo' });
         setSliders(sliderRes);
@@ -46,7 +64,7 @@ export const Inicio = () => {
 
     if (cargando) {
         return (
-            <LogoCarga/>
+            <LogoCarga />
         )
     } else {
         return (
