@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Miniatura.css";
 
-export const Miniatura = ({ objetoJuego }) => {
+export const Miniatura = ({ objetoJuego, enlaceDetalle }) => {
   const [juego, setJuego] = useState(objetoJuego);
-
+  const [enlace, setEnlace] = useState(enlaceDetalle || `/juego/${juego.id}`)
+ 
   return (
-    <Link to={`/juego/${juego.id}`} className="enlace-miniatura">
+    <Link to={enlace} className="enlace-miniatura">
       <div key={juego.id} className="contenido_miniatura">
         <div className="box">
           <img className="img_miniatura" src={juego.background_image} alt={juego.name} />

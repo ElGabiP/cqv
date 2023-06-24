@@ -6,7 +6,6 @@ import { juegosApi, traductorApi } from '../../Utilidades/api';
 import { LogoCarga } from '../../Componentes/Logo/LogoCarga';
 import { obtenerIconoPlataforma } from '../../Utilidades/iconos';
 import { FaChevronLeft } from 'react-icons/fa';
-import { BsFillHandThumbsUpFill, BsHandThumbsUp, BsStarFill, BsStar } from 'react-icons/bs';
 import { MeGusta } from '../../Componentes/Iconos/MeGusta/MeGusta';
 import { Favorito } from '../../Componentes/Iconos/Favorito/Favorito';
 
