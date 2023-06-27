@@ -4,14 +4,24 @@ import { useState, useEffect } from "react";
 import { juegosApi } from "../../Utilidades/api";
 import { CarruselMiniatura } from "../../Componentes/CarruselMiniatura/CarruselMiniatura";
 import { LogoCarga } from "../../Componentes/Logo/LogoCarga";
+import { useLocation } from "react-router-dom";
 
 export const Inicio = () => {
+
+    const useQuery = ()=>{
+        return new URLSearchParams(useLocation().search)
+    }
+
+    const query = useQuery();
+    const search = query.get("search");
 
     const [masBuscados, setMasBuscados] = useState([]);
     const [valorados, setValorados] = useState([]);
     const [nuevos, setNuevos] = useState([]);
     const [sliders, setSliders] = useState(null);
     const [cargando, setCargando] = useState(true);
+
+    const Location = useLocation();
 
     const getJuegos = async () => {
         const sliderRes = [];
@@ -53,10 +63,11 @@ export const Inicio = () => {
     }
 
     useEffect(() => {
+        /* const searchURL = search ? "/search?query="+search :  */
         if (masBuscados && masBuscados.length === 0) {
             getJuegos();
         }
-    }, [masBuscados])
+    }, [masBuscados, search])
 
     const getDataAleatoria = (data) => {
         return data[Math.floor(Math.random() * data.length)];
