@@ -8,7 +8,8 @@ export const Buscador = () => {
 
     const handLeSubmit =(e)=>{
         e.preventDefault()
-        navegate(`/?search=${searchText}`)
+        navegate(`/search/${searchText}`)
+        setSearchText("")
     }
   return (
     <form className="d-flex mx-auto w-75" onSubmit={handLeSubmit}>
