@@ -26,7 +26,7 @@ export const Search = () => {
         obtenerJuegos()
     }
   }, [cargando]);
-  
+
   useEffect(() => {
     if (buscado !== searchText) { 
         setCargando(true)       
