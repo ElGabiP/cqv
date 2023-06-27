@@ -5,6 +5,7 @@ import { juegosApi } from "../../Utilidades/api";
 import { CarruselMiniatura } from "../../Componentes/CarruselMiniatura/CarruselMiniatura";
 import { LogoCarga } from "../../Componentes/Logo/LogoCarga";
 
+
 export const Inicio = () => {
 
     const [masBuscados, setMasBuscados] = useState([]);
@@ -13,6 +14,7 @@ export const Inicio = () => {
     const [sliders, setSliders] = useState(null);
     const [cargando, setCargando] = useState(true);
 
+  
     const getJuegos = async () => {
         const sliderRes = [];
 
@@ -53,6 +55,7 @@ export const Inicio = () => {
     }
 
     useEffect(() => {
+        
         if (masBuscados && masBuscados.length === 0) {
             getJuegos();
         }

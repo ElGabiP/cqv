@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Logo } from '../Logo/Logo';
-import { ImSearch } from "react-icons/im";
 import { Navbar } from "../Navbar/Navbar";
 import "./Header.css";
+import { Buscador } from '../Buscador/Buscador';
 
 export const Header = () => {
   return (
@@ -12,10 +12,7 @@ export const Header = () => {
           <Logo />
         </Link>
         <div className="navbar-collapse " id="navbarSupportedContent">
-          <form className="d-flex mx-auto w-75">
-            <input className="form-control me-2" type="search" placeholder="Con que te quieres enviciar hoy?" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit"><ImSearch /></button>
-          </form>
+          <Buscador/>
           <div className="nav-dextop d-sm-none d-md-flex ">
             <Navbar />
           </div>
