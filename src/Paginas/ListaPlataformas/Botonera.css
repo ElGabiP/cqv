@@ -1,10 +1,13 @@
+.botonera-oculta {
+    visibility: hidden;
+}
+
 .botonera .boton-plataforma {
     color: #333 !important;
 }
 
 .botonera {
-    background-color: #f0f8ff50;
-    z-index: -99;
+    background-color: #f0f8ffa0;
 }
 
 .btn-check:checked+.boton-plataforma{
