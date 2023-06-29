@@ -36,7 +36,7 @@ export const Inicio = () => {
         /* Ahora buscamos los mejor valorados */
         let data2 = JSON.parse(sessionStorage.getItem('mejorValorados'));
         if (!data2) {
-            data2 = await juegosApi('games', { page_size: 8, ordering: 'rating' });
+            data2 = await juegosApi('games', { page_size: 8, ordering: '-metacritic' });
             sessionStorage.setItem('mejorValorados', JSON.stringify(data2));
         }
         setValorados(data2);
@@ -45,7 +45,7 @@ export const Inicio = () => {
         /* Finalmente llenamos la lista de los mas nuevos */
         let data3 = JSON.parse(sessionStorage.getItem('masNuevos'));
         if (!data3) {
-            data3 = await juegosApi('games', { page_size: 8, ordering: 'created' });
+            data3 = await juegosApi('games', { page_size: 8, ordering: '-created' });
             sessionStorage.setItem('masNuevos', JSON.stringify(data3));
         }
         setNuevos(data3);

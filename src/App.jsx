@@ -4,8 +4,9 @@ import { Header } from "./Componentes/Header/Header";
 import { Inicio } from "./Paginas/Inicio/Inicio";
 import { Generos } from "./Paginas/Generos/Generos";
 import { DetalleJuego } from "./Paginas/Detalle/Detalle";
-import {Login} from "./Paginas/Login/Login";
-import {Plataformas} from "./Paginas/Plataformas/Plataformas";
+import { Login } from "./Paginas/Login/Login";
+import { Plataformas } from "./Paginas/Plataformas/Plataformas";
+import { ListaPorPlataformas } from "./Paginas/ListaPlataformas/ListaPorPlataformas";
 import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
 import { Search } from "./Paginas/Search/Search";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,7 +26,8 @@ function App() {
         <Route path="/plataformas" element={<Plataformas/>}></Route>
         <Route path="/detallegenero/:nombregenero/:generoId" element={<DetalleGenero/>}></Route>
         <Route path="/search/:searchText" element={<Search/>}></Route>
-        </Routes>
+          <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { LogoCarga } from "../../Componentes/Logo/LogoCarga";
 import { Miniatura } from "../../Componentes/Miniatura/Miniatura";
 import { juegosApi } from "../../Utilidades/api";
@@ -34,7 +33,7 @@ export const Generos = () => {
     return (
       <div className="container-fluid pt-3">
         <div className="row">
-          <h1 className="text-center">Generos</h1>
+          <h1 className="text-center">Géneros</h1>
           {
             generos && generos.length > 0 ?
               generos.map((genero, key) => (

@@ -1,0 +1,21 @@
+.icono-plataforma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8cqmax;
+}
+
+.contenido-plataforma {
+    height: 12vmax;
+}
+
+.titulo-plataforma {
+    text-align: center;
+    font-size: 14px;
+    font-size: clamp(.88rem, 14px, 1.5rem);
+}
+
+.enlace-plataformas {
+    color: #333;
+    text-decoration: none;
+  }
