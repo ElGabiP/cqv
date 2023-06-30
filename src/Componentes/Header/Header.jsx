@@ -12,7 +12,7 @@ export const Header = () => {
           <Logo />
         </Link>
         <div className="navbar-collapse " id="navbarSupportedContent">
-          <Buscador/>
+          <Buscador />
           <div className="nav-dextop d-sm-none d-md-flex ">
             <Navbar />
           </div>

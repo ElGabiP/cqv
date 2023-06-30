@@ -60,12 +60,12 @@ export const Botonera = ({ plataforma }) => {
     <div className="contenedor-botonera">
       {plataforma.length === 1 ? (
         <div>
-          <h3>Tu lista de juegos</h3>
+          <h3 className="fuente principal">Tu lista de juegos</h3>
         </div>
       ) : (
         <>
           <div className="my-3">
-            <h3>Elegí una plataforma</h3>
+            <h3 className="fuente principal">Elegí una plataforma</h3>
           </div>
           <div
             className={cargando ? "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around botonera-oculta" : "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around"}
@@ -109,7 +109,7 @@ export const Botonera = ({ plataforma }) => {
             </div>
             {juegos && juegos.length > 0
               ? juegos.map((juego, key) => (
-                  <div className="col-6 col-sm-4 col-lg-3">
+                  <div className="col-6 col-sm-4 col-lg-3 scale-in-center" style={{ animationDelay: `0.${1 + key}s` }}>
                     <Miniatura key={key} objetoJuego={juego} />
                   </div>
                 ))

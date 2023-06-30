@@ -34,22 +34,21 @@ export const ListaPorPlataformas = () => {
     return (
       <div className="container-fluid pt-3">
         <div className="navegacion-plataformas clearfix">
-        <div className="icono-navegacion float-left">
-          <FaChevronLeft onClick={() => navigate(-1)} />
-        </div>
+          <div className="icono-navegacion float-left">
+            <FaChevronLeft onClick={() => navigate(-1)} />
+          </div>
         </div>
         {plataformas && plataformas.length > 0
           ? plataformas.map((plataforma) => {
-              if (plataforma.slug === plataformasId) {
-                return (
-                  <div className="row" key={plataforma.id}>
-                    <h1 className="text-center titulo">{plataforma.name}</h1>
-
-                    <Botonera plataforma={plataforma.platforms} />
-                  </div>
-                );
-              }
-            })
+            if (plataforma.slug === plataformasId) {
+              return (
+                <div className="row" key={plataforma.id}>
+                  <h1 className="text-center blacklime">{plataforma.name}</h1>
+                  <Botonera plataforma={plataforma.platforms} />
+                </div>
+              );
+            }
+          })
           : ""}
       </div>
     );

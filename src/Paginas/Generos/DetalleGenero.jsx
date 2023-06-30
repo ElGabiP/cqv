@@ -15,12 +15,12 @@ export const DetalleGenero = () => {
 
   useEffect(() => {
     if (juegos === null) {
-        obtenerJuegos()
+      obtenerJuegos()
     }
   }, [cargando]);
 
   const obtenerJuegos = async () => {
-    await juegosApi(`games`, { genre: generoId }).then((games) => {
+    await juegosApi(`games`, { genres: generoId }).then((games) => {
       if (games) {
         setJuegos(games);
         setCargando(false);
@@ -33,22 +33,24 @@ export const DetalleGenero = () => {
   }
 
   return (
-    <div>
+    <>
+      <div className="header">
         <div className="navegacion">
-                        <FaChevronLeft onClick={() => navi(-1)} />
-                    </div>
-      <h1 className="fuente-principal">{nombregenero}</h1>
+          <FaChevronLeft onClick={() => navi(-1)} />
+        </div>
+      </div>
+      <h1 className="blacklime fuente-principal">{nombregenero}</h1>
       <div className="container">
         <div className="row">
           {juegos && juegos.length > 0
             ? juegos.map((juego, key) => (
-                <div className="col-6 col-sm-4 col-lg-3">
-                  <Miniatura key={key} objetoJuego={juego} />
-                </div>
-              ))
+              <div className="col-6 col-sm-4 col-lg-3 scale-in-center" style={{ animationDelay: `0.${1 + key}s` }}>
+                <Miniatura key={key} objetoJuego={juego} />
+              </div>
+            ))
             : ""}
         </div>
       </div>
-    </div>
+    </>
   );
 };

@@ -12,7 +12,7 @@ export const Carrusel = ({ sliders }) => {
 
   if (sliders != null && sliders.length > 0) {
     return (
-      <div id="carousel" className="carousel slide" data-bs-ride="carousel" >
+      <div id="carousel" className="carousel slide mb-5" data-bs-ride="carousel" >
         <div className="carousel-inner">
           {
             sliders.map((slider, key) => (

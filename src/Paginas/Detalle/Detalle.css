@@ -2,6 +2,10 @@
     padding: 8px 20px 35px;
 }
 
+.detalle .navegacion {
+    color: var(--color-primario);
+}
+
 .detalle .header {
     display: flex;
     flex-flow: row;
@@ -35,12 +39,12 @@
 }
 
 .detalle p {
-    color: #464646;
+    color: #9d9d9d;
 }
 
 .detalle h1 {
     font-size: 25px;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     margin: 10px 0;
 }
 

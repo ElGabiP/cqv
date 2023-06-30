@@ -9,9 +9,19 @@ import "swiper/css/pagination";
 
 import { Miniatura } from "../Miniatura/Miniatura";
 
+const obtenerNumeroDeMiniaturas = () => {
+    if(window.innerWidth > '800'){
+        return 6;
+    }
+    if(window.innerWidth > '600'){
+        return 4;
+    }
+    return 2;
+}
+
 export const CarruselMiniatura = ({ listadoJuego, cantidadMiniaturas }) => {
     const [lista, setLista] = useState(listadoJuego);
-    const [cantidad, setCantidad] = useState(cantidadMiniaturas ?? 4);
+    const [cantidad, setCantidad] = useState(obtenerNumeroDeMiniaturas());
 
     return (
         <>

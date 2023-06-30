@@ -43,7 +43,7 @@ export const Plataformas = () => {
     return (
       <div className="container-fluid pt-3">
         <div className="row">
-          <h1 className="text-center">Plataformas</h1>
+          <h1 className="text-center blacklime ">Plataformas</h1>
           {plataformas && plataformas.length > 0
             ? plataformas.map((plataforma) => (
                 <div className="col-6 col-sm-4 col-lg-3" key={plataforma.id}>
