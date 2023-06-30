@@ -86,7 +86,7 @@ export const Botonera = ({ plataforma }) => {
                       onChange={() => actualizarBotonera(index)}
                     />
                     <label
-                      className="btn boton-plataforma btn-outline-secondary"
+                      className="btn boton-plataforma btn-outline-success"
                       htmlFor={`custom-checkbox-${index}`}
                     >
                       {name}
