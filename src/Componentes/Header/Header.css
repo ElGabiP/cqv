@@ -10,17 +10,13 @@
 
 .navbar-toggler {
   box-shadow: 0px 0px 0.5rem var(--color-primario);
+  animation: pulsate1 2s infinite alternate;
 }
 
 .menu-icon {
   color: var(--color-primario);
   margin: 0%
 }
-
-.navbar-toggler {
-  animation: pulsate1 2s infinite alternate;
-}
-
 
 .resplandor {
   animation: pulsate 2s infinite alternate;
