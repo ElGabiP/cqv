@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;600&display=swap");
 
 .contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 0.5em 0 0;
 }
 
 .glass {
@@ -78,7 +76,7 @@
     filter: drop-shadow(0 0 4px #c8fdc8) drop-shadow(0 0 5px lime);
   }
 
-  62.999%, 64%, 64.999%{
+  62.999%, 64%, 64.999% {
     opacity: .99;
   }
 
@@ -90,7 +88,7 @@
   }
 }
 
-.flicker-fast{
+.flicker-fast {
   animation: flicker 1s linear infinite;
 }
 
@@ -101,5 +99,11 @@
 
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    font-size: 2.15rem;
   }
 }

@@ -1,0 +1,23 @@
+.botonera-oculta {
+    visibility: hidden;
+}
+
+.botonera .boton-plataforma {
+    color:  #9d9d9d !important;
+}
+
+.boton-plataforma:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 0.3rem var(--color-primario);
+    transition: all 0.4s ease;
+}
+
+.botonera {
+    background-color: #15151598;
+}
+
+.btn-check:checked+.boton-plataforma {
+    color: var(--color-terciario) !important;
+    text-shadow:  0 0 4px var(--color-terciario);
+    box-shadow: 0px 0px 0.1rem var(--color-terciario), 0px 0px 0.3rem var(--color-primario), 0px 0px 0.5rem var(--color-primario);
+}

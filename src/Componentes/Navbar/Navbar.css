@@ -6,7 +6,7 @@
     right: 0;
     left: 0;
     margin: 0 auto;
-    padding: 5px 10px;
+    padding: 20px 10px 5px 10px;
     background-color: var(--color-secundario);
     width: 80%;
     border-radius: 30px 30px 0 0;
@@ -14,10 +14,6 @@
     justify-content: space-around !important;
     color: var(--color-terciario);
     z-index: 9;
-  }
-
-  .navbar-nav {
-    padding-top: 20px;
   }
 
   .nav-item {

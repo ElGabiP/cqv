@@ -4,14 +4,13 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-
 export const Navbar = () => {
   return (
     <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
       <li className="nav-item icon">
         <Link to={"/generos"}>
           < BiCategory />
-          <p className="fuente-principal regular">Generos</p>
+          <p className="fuente-principal regular">Géneros</p>
         </Link>
       </li>
       <li className="nav-item icon">
@@ -34,5 +33,3 @@ export const Navbar = () => {
 
   );
 };
-
-
