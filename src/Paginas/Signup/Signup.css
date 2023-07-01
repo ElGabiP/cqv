@@ -1,4 +1,4 @@
-.login {
+.signup {
   background: #161645;
 }
 
@@ -24,7 +24,7 @@
   font-size: 25px;
 }
 
-.formLogin {
+.formRegister {
   padding: 0 25px 0 35px;
 }
 
