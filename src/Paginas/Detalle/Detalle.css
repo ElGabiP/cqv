@@ -61,6 +61,6 @@
     font-size: 30px;
 }
 
-.iconos-plataformas svg:first-child {
+.iconos-plataformas svg{
     margin-right: 8px;
 }
