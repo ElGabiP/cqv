@@ -11,10 +11,9 @@ import { Plataformas } from "./Paginas/Plataformas/Plataformas";
 import { ListaPorPlataformas } from "./Paginas/ListaPlataformas/ListaPorPlataformas";
 import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
 import { Search } from "./Paginas/Search/Search";
+import { NoEncontrado } from "./Paginas/NoEncontrado/NoEncontrado";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
-
 
 function App() {
   return (

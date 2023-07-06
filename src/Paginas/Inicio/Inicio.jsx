@@ -19,7 +19,7 @@ export const Inicio = () => {
         const mes = hoy.getUTCMonth() + (1 + mesesASumar);
         const dia = hoy.getUTCDate();
         const anio = hoy.getUTCFullYear();
-        return `${anio}-${mes.toString().padStart(2,'0')}-${dia}`;
+        return `${anio}-${mes.toString().padStart(2,'0')}-${dia.toString().padStart(2,'0')}`;
     }
 
     const getJuegos = async () => {

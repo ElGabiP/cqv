@@ -75,7 +75,7 @@ export const DetalleJuego = () => {
                     </div>
                 </div>
                 <div className='description'>
-                    <img src={juego.background_image} />
+                    <img alt={"Imagen del juego "+juego.name} src={juego.background_image  ?  juego.background_image : `${process.env.PUBLIC_URL}/img/bati-profe.jpg` } />
                     <div className="iconos-plataformas">
                         {obtenerPlataformas(juego.platforms)}
                     </div>
