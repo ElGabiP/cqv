@@ -33,7 +33,7 @@ export const Login = () => {
   return (
     <div className="login template d-flex justify-content-center align-items-center vh-100">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-md-center">
           <div className="col-12 col-lg-6 col-md-8 col-xxl-5">
             <h1 className="main-heading">Inicia Sesión</h1>
             <form className="formLogin" onSubmit={loginUser}>
