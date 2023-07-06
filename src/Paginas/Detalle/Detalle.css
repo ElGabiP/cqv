@@ -32,6 +32,8 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 55%;
+    text-align: center;
 }
 
 .detalle .header .interaccion svg:first-child {

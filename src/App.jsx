@@ -13,9 +13,9 @@ import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
 import { Search } from "./Paginas/Search/Search";
 import { Presentacion } from "./Paginas/Presentacion/Presentacion";
 import { NoEncontrado } from "./Paginas/NoEncontrado/NoEncontrado";
+import { Guardados } from "./Paginas/Guardados/Guardados";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-
 
 
 
@@ -36,6 +36,7 @@ function App() {
         <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
         <Route path="/presentaciong7" element={<Presentacion/>}></Route>
         <Route path="*" element={<NoEncontrado />} />
+        <Route path="/guardados/:collection" element={<Guardados/>}></Route>
 
       </Routes>
     </BrowserRouter>

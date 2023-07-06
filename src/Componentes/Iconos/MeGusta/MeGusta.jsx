@@ -2,20 +2,23 @@ import { useState } from 'react'
 import "../iconos-dinamicos.css";
 import "./Me-gusta.css";
 import { FaThumbsUp } from "react-icons/fa";
-export const MeGusta = () => {
+export const MeGusta = ({ clickAction, seleccionado }) => {
 
-    const [clickeado, setClickeado] = useState(false);
+    const [clickeado, setClickeado] = useState(seleccionado || false);
     const [clickeable, setClickeable] = useState(true);
 
     const meGustaAction = () => {
-        if (clickeado) {
-            setClickeado(prevValue => !prevValue);
-        } else {
-            setClickeable(false);
-            setClickeado(prevValue => !prevValue);
-            setTimeout(() => {
-                setClickeable(true)
-            }, 1200);
+        const seGuardo = clickAction();
+        if (seGuardo) {
+            if (clickeado) {
+                setClickeado(prevValue => !prevValue);
+            } else {
+                setClickeable(false);
+                setClickeado(prevValue => !prevValue);
+                setTimeout(() => {
+                    setClickeable(true)
+                }, 1200);
+            }
         }
     }
 

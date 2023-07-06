@@ -1,0 +1,15 @@
+.late.anim .icono {
+    color: #ffffff;
+}
+
+.late .borde span {
+    border: 1px solid #ffffff;
+}
+
+.late.anim .satellite span:nth-child(1) {
+    background: #ffffff;
+}
+
+.late .spark span {
+    background: #ffffff;
+}

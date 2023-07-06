@@ -4,19 +4,22 @@ import "./Favorito.css";
 
 import { FaStar } from 'react-icons/fa';
 
-export const Favorito = () => {
-    const [clickeado, setClickeado] = useState(false);
+export const Favorito = ({ clickAction, seleccionado }) => {
+    const [clickeado, setClickeado] = useState(seleccionado || false);
     const [clickeable, setClickeable] = useState(true);
 
     const favoritoAction = () => {
-        if (clickeado) {
-            setClickeado(prevValue => !prevValue);
-        } else {
-            setClickeable(false);
-            setClickeado(prevValue => !prevValue);
-            setTimeout(() => {
-                setClickeable(true)
-            }, 1200);
+        const seGuardo = clickAction();
+        if (seGuardo) {
+            if (clickeado) {
+                setClickeado(prevValue => !prevValue);
+            } else {
+                setClickeable(false);
+                setClickeado(prevValue => !prevValue);
+                setTimeout(() => {
+                    setClickeable(true)
+                }, 1200);
+            }
         }
     }
 
