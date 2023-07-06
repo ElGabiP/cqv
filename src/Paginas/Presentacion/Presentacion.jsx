@@ -33,25 +33,20 @@ export const Presentacion = () => {
             </div>
             <div className="carousel-item " data-bs-interval="5000">
               <div className="container contenido-slider">
-                <h3 className="letra text-center mb-5">¿Quienes somos?</h3>
+                <h3 className="letra text-center mb-5">¿Quiénes somos?</h3>
                 <p className=" mb-5">
-                  Somos una WEB-APP dedicada al universo gamer, donde nuestros
-                  usuarios y visitantes podran ver los nuevos lanzamientos,
-                  poder chequear en que plataforma corren sus juegos. Nuestros
-                  usuarios podras crearce una biblioteca donde puedan saber con
-                  que juegos cuentan que juegos desean y cuales les gusta con un
-                  simple click.
+                Somos una WEB-APP dedicada al universo gamer, donde nuestros usuarios y visitantes podrán ver los nuevos lanzamientos y chequear en qué plataforma corren sus juegos. Nuestros usuarios podrán crear una biblioteca para saber con qué juegos cuentan, qué juegos desean y cuáles les gustan. ¡Todo con un simple click!
                 </p>
                 <div className="d-flex justify-content-center">
                   <div className="icon-target">
                     <BsPeople size={60} fill="#0b72a5" />
                   </div>
-                  <h3 className="letra mb-5">People/target</h3>
+                  <h3 className="letra mb-5">Público / target</h3>
                 </div>
                 <ul className="lista-presentacion">
-                  <li>Jovenes y adultos de entre 14 y 45 años.</li>
+                  <li>Jóvenes y adultos de entre 14 y 45 años.</li>
                   <li>
-                    No nos importa su clase social solo que pertenezcan a
+                    No nos importa su clase social, solo que pertenezcan a
                     nuestro mundo, GAMER.
                   </li>
                 </ul>
@@ -59,7 +54,7 @@ export const Presentacion = () => {
             </div>
             <div className="carousel-item" data-bs-interval="5000">
               <div className="container contenido-slider">
-                <h3 className="letra">Nuestra familia tipografica</h3>
+                <h3 className="letra">Nuestra familia tipográfica</h3>
                 <div className="tipografia text-center">
                   <p className="bold">
                     Fuente principal Rajdhani{" "}
@@ -244,7 +239,7 @@ export const Presentacion = () => {
                         src={
                           process.env.PUBLIC_URL + "/img/prueba general2.png"
                         }
-                        className="img-fluid "
+                        className="img-fluid"
                         alt="..."
                       ></img>
                     </div>
@@ -255,10 +250,11 @@ export const Presentacion = () => {
             <div className="carousel-item " data-bs-interval="4000">
               <div className="container contenido-slider">
                 <h3 className="letra text-center">Proyecto Final</h3>
-                <div className="d-flex justify-content-center">
+                <div className="d-flex justify-content-center align-self-center">
                   <img
                     src={process.env.PUBLIC_URL + "/img/final.png"}
                     alt="..."
+                    className="img-fluid"
                     width="1000"
                   ></img>
                 </div>
