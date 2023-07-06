@@ -8,7 +8,7 @@
   height: 75vh;
 }
 
-.container .card {
+.signup .container .card {
   border: none;
   /* border-top: 10px solid rgb(176, 106, 252); */
   border-top: 10px solid #1ae31f !important;
@@ -42,7 +42,7 @@
   padding: 0 25px 0 35px;
 }
 
-.form-control {
+.signup .form-control {
   border: 1px solid #57557a;
   border-radius: 2px;
   background: #212042;
@@ -52,7 +52,7 @@
   color: #151515 !important;
 }
 
-.form-control:focus {
+.signup .form-control:focus {
   border: 1px solid #57557a;
   border-radius: 2px;
   background: #212042;
