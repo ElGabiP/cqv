@@ -42,7 +42,7 @@ export const Guardados = () => {
         </div>
       </div>
       <h1 className="blacklime fuente-principal">{obtenerTituloPagina()}</h1>
-      <div className="container">
+      <div className="container pb-5">
         <div className="row">
           {juegos && juegos.length > 0
             ? juegos.map((juego, key) => (

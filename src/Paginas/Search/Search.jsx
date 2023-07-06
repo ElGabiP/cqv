@@ -58,7 +58,7 @@ export const Search = () => {
         </div>
         <h1 className="fuente-principal">Resultados para:{'\n'+searchText}</h1>
       </div>
-      <div className="container">
+      <div className="container pb-5">
         <div className="row">
           {juegos && juegos.length > 0
             ? juegos.map((juego, key) => (
