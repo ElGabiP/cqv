@@ -13,6 +13,7 @@ import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
 import { Search } from "./Paginas/Search/Search";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import { Presentacion } from "./Paginas/Presentacion/Presentacion";
 
 
 
