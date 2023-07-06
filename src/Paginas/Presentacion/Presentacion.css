@@ -7,11 +7,11 @@
   max-height: 100vh !important;
   height: 100vh !important;
   width: 100vw !important;
-  max-width: 99vmax;
-  background-image:url(/public/img/images.jpg);
+  max-width: 100vmax;
+  background-image: url(/public/img/images.jpg);
 }
 
-.carousel-item::before{
+.carousel-item::before {
   display: inline-grid;
   content: '';
   width: 100%;
@@ -19,8 +19,8 @@
 }
 
 .contenedor-carga {
-  max-width: 100%;
-
+  max-width: 100vw !important;
+  padding-inline: 0px !important;
 }
 
 .contenido-slider {
@@ -67,7 +67,7 @@ p {
 
   & li {
     list-style: none;
-    color:whitesmoke;
+    color: whitesmoke;
   }
 
   & li::before {
@@ -84,7 +84,7 @@ p {
 }
 
 .color-verde {
-  color:black;
+  color: black;
   font-family: var(--fuente-secundaria);
   border-radius: 100%;
   background-color: var(--color-primario);
@@ -94,7 +94,7 @@ p {
 }
 
 .color-violeta {
-  color:white;
+  color: white;
   border: 1px white solid;
   border-radius: 100%;
   background-color: var(--color-secundario);
@@ -104,7 +104,7 @@ p {
 }
 
 .color-gris {
-  color:black;
+  color: black;
   font-family: var(--fuente-secundaria);
   border-radius: 100%;
   background-color: var(--color-terciario);
@@ -115,7 +115,7 @@ p {
 }
 
 .color-oscuro {
-  color:whitesmoke;
+  color: whitesmoke;
   border: 1px white solid;
   border-radius: 100%;
   background-color: var(--color-cuarto);
@@ -124,8 +124,9 @@ p {
   margin: 0;
   line-height: 6rem;
 }
-.paleta{
-  color:whitesmoke;
+
+.paleta {
+  color: whitesmoke;
   font-family: var(--fuente-primaria);
 }
 
@@ -133,23 +134,28 @@ p {
   margin-right: 20px;
 }
 
-.titulo-logo{
+.titulo-logo {
   margin-bottom: 3.5rem;
 }
 
-.creditos{
+.creditos {
   margin-top: 1rem;
   white-space: nowrap;
   will-change: transform;
   animation: slidein 10s linear infinite;
- /* animation-name: slidein;*/
+  /* animation-name: slidein;*/
 }
 
-@keyframes slidein{
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); } 
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.boton-a-inicio{
-  color:#ce283c !important;
+.boton-a-inicio {
+  color: #ce283c !important;
 }
