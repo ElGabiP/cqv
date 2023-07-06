@@ -1,15 +1,26 @@
 .login {
-  background: #161645;
+  /* background: #161645; */
+  background: #151515;
+  font-family: var(--fuente-principal);
+  color: #151515;
 }
 
 .main_div {
   height: 75vh;
 }
 
+.ms-2 {
+  text-decoration: none;
+  font-size: large;
+  font-weight: 900;
+}
+
 .container .card {
   border: none;
-  border-top: 5px solid rgb(176, 106, 252);
-  background: #212042;
+  /* border-top: 10px solid rgb(176, 106, 252); */
+  border-top: 10px solid #1ae31f !important;
+  /* background: #212042; */
+  background: #161645;
   color: #57557a;
 }
 
@@ -21,7 +32,7 @@
 
 .main-heading {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 30px !important;
 }
 
 .formLogin {
@@ -34,6 +45,8 @@
   background: #212042;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  font-weight: 600 !important;
+  color: #151515 !important;
 }
 
 .form-control:focus {
@@ -43,6 +56,7 @@
   box-shadow: none;
   letter-spacing: 1px;
   color: #fff;
+  font-weight: 600;
 }
 
 .bn {

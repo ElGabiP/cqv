@@ -114,7 +114,7 @@ export const Signup = () => {
                     </button>
                   </div>
                   <p className="text-end mt-2">
-                    Ya estás registrado?{" "}
+                    Ya estás registrado?
                     <Link to="/login" className="ms-2">
                       Inicia Sesión
                     </Link>
