@@ -35,8 +35,8 @@ function App() {
         <Route path="/search/:searchText" element={<Search/>}></Route>
         <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
         <Route path="/presentaciong7" element={<Presentacion/>}></Route>
-        <Route path="*" element={<NoEncontrado />} />
         <Route path="/guardados/:collection" element={<Guardados/>}></Route>
+        <Route path="*" element={<NoEncontrado />} />
 
       </Routes>
     </BrowserRouter>
