@@ -21,7 +21,7 @@
   border-top: 10px solid #1ae31f !important;
   /* background: #212042; */
   background: #161645;
-  color: #57557a;
+  color: #161645;
 }
 
 .separador {
@@ -40,7 +40,7 @@
 }
 
 .form-control {
-  border: 1px solid #57557a;
+  border: 1px solid #161645;
   border-radius: 2px;
   background: #212042;
   margin-bottom: 20px;
@@ -50,7 +50,7 @@
 }
 
 .form-control:focus {
-  border: 1px solid #57557a;
+  border: 1px solid #161645;
   border-radius: 2px;
   background: #212042;
   box-shadow: none;
@@ -67,16 +67,6 @@
   cursor: pointer;
 }
 
-.btn-primary {
-  background: linear-gradient(
-    135deg,
-    rgba(175, 106, 252, 1) 39%,
-    rgba(116, 17, 255, 1) 100%
-  ) !important;
-  border: none;
-  border-radius: 50px;
-}
-
 small {
-  color: #f2ceff;
+  color:#161645 ;
 }

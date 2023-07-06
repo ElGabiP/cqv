@@ -2,10 +2,10 @@ import { BiCategory } from "react-icons/bi";
 import { FaGamepad } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
 import { auth } from "../../firebase/config";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import "./Navbar.css";
 
 export const Navbar = () => {
   const [authUser, setAuthUser] = useState("");

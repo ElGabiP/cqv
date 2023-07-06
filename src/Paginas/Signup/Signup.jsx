@@ -36,7 +36,7 @@ export const Signup = () => {
   return (
     <div className="signup template d-flex justify-content-center align-items-center vh-100">
       <div className="container">
-        <div className="row w-100 d-flex justify-content-center align-items-center main_div">
+        <div className="row w-100 d-flex justify-content-center main_div align-items-stretch">
           <div className="col-12 col-lg-6 col-md-8 col-xxl-5">
             <div className="card py-3 px-2">
               <div className="separador">
@@ -109,7 +109,7 @@ export const Signup = () => {
                   </div>
 
                   <div className="d-grid">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn btn-primary boton-registro btn-lg">
                       Registrate
                     </button>
                   </div>

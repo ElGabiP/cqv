@@ -21,15 +21,17 @@ export const Presentacion = () => {
               style={{
                 backgroundImage: `url(${process.env.PUBLIC_URL}/img/video-games-collage-Dota-2-Carnival-ART-festival-208769-wallhere.com.jpg)`,
               }}
-              data-bs-interval="300000"
+              data-bs-interval="4000"
             >
-              <img
-                src={process.env.PUBLIC_URL + "/img/logo.svg"}
-                className="d-block w-100"
-                alt="..."
-              ></img>
+              <div className="container contenido-slider">
+                <img
+                  src={process.env.PUBLIC_URL + "/img/logo.svg"}
+                  className="d-block w-75 mx-auto"
+                  alt="..."
+                ></img>
+              </div>
             </div>
-            <div className="carousel-item " data-bs-interval="200000">
+            <div className="carousel-item " data-bs-interval="5000">
               <div className="container contenido-slider">
                 <h3 className="letra text-center mb-5">¿Quienes somos?</h3>
                 <p className=" mb-5">
@@ -55,7 +57,7 @@ export const Presentacion = () => {
                 </ul>
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="200000">
+            <div className="carousel-item" data-bs-interval="5000">
               <div className="container contenido-slider">
                 <h3 className="letra">Nuestra familia tipografica</h3>
                 <div className="tipografia text-center">
@@ -105,7 +107,7 @@ export const Presentacion = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="200000">
+            <div className="carousel-item" data-bs-interval="5000">
               <div className="container contenido-slider">
                 <h3 className="letra text-center">Recursos</h3>
                 <h3 className="letra">Api’s</h3>
@@ -201,75 +203,94 @@ export const Presentacion = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="200000">
-              <h3 className="letra text-center">Bocetos</h3>
-              <div className="d-flex flex-row justify-content-around my-4">
-                <img
-                  src={process.env.PUBLIC_URL + "/img/mpv.png"}
-                  alt="..."
-                  width="600px"
-                ></img>
-              </div>
-            </div>
-            <div className="carousel-item " data-bs-interval="200000">
-              <h3 className="letra text-center">Diseños</h3>
-              <div className="row justify-content-evenly row-cols-2 align-items-center">
-                <div className="col-3 ps-5 align-self-end">
-                  <div className="" height="100">
-                    <img
-                      src={process.env.PUBLIC_URL + "/img/paleta.png"}
-                      className="img-fluid "
-                      alt="..."
-                    ></img>
-                    <img
-                      src={process.env.PUBLIC_URL + "/img/prueba index.png"}
-                      className="img-fluid "
-                      alt="..."
-                    ></img>
-                    <img
-                      src={process.env.PUBLIC_URL + "/img/otra.png"}
-                      className="img-fluid "
-                      alt="..."
-                    ></img>
-                  </div>
-                </div>
-                <div className="col-7 pe-4">
-                  <div className="">
-                    <img
-                      src={process.env.PUBLIC_URL + "/img/prueba general2.png"}
-                      className="img-fluid "
-                      alt="..."
-                    ></img>
-                  </div>
+            <div className="carousel-item" data-bs-interval="4000">
+              <div className="container contenido-slider">
+                <h3 className="letra text-center">Bocetos</h3>
+                <div className="d-flex flex-row justify-content-around my-4">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/mpv.png"}
+                    alt="..."
+                    width="500px"
+                  ></img>
                 </div>
               </div>
             </div>
-            <div className="carousel-item " data-bs-interval="300000">
-              <h3 className="letra text-center">Proyecto Final</h3>
-              <img
-                src={process.env.PUBLIC_URL + "/img/final.png"}
-                alt="..."
-                width="1000"
-              ></img>
-            </div>
-            <div className="carousel-item">
-              <h3 className="titulo-logo text-center">
-                Producido y desarrollado por
-              </h3>
-              <div className="d-flex justify-content-center">
-                <img
-                  className="proyecto-final"
-                  src={process.env.PUBLIC_URL + "/img/nuestro logo blanco.svg"}
-                  alt="..."
-                  width="300"
-                ></img>
+            <div className="carousel-item " data-bs-interval="4000">
+              <div className="container contenido-slider">
+                <h3 className="letra text-center">Diseños</h3>
+                <div className="row justify-content-evenly row-cols-2 align-items-center">
+                  <div className="col-3 ps-5 align-self-end">
+                    <div className="" height="100">
+                      <img
+                        src={process.env.PUBLIC_URL + "/img/paleta.png"}
+                        className="img-fluid "
+                        alt="..."
+                      ></img>
+                      <img
+                        src={process.env.PUBLIC_URL + "/img/prueba index.png"}
+                        className="img-fluid "
+                        alt="..."
+                      ></img>
+                      <img
+                        src={process.env.PUBLIC_URL + "/img/otra.png"}
+                        className="img-fluid "
+                        alt="..."
+                      ></img>
+                    </div>
+                  </div>
+                  <div className="col-7 pe-4">
+                    <div className="">
+                      <img
+                        src={
+                          process.env.PUBLIC_URL + "/img/prueba general2.png"
+                        }
+                        className="img-fluid "
+                        alt="..."
+                      ></img>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p className="creditos text-center">
-                Mónica Alejandra Gallardo - Ezequiel Alejandro Bustos - Eduardo
-                Castillo - Gabriel Pescio - Brenda Hipper
-              </p>
-              <div className="d-flex justify-content-center">
-                <button className="boton-a-inicio btn btn-outline-primary" onClick={volverAInicio}>Volver a CQV</button>
+            </div>
+            <div className="carousel-item " data-bs-interval="4000">
+              <div className="container contenido-slider">
+                <h3 className="letra text-center">Proyecto Final</h3>
+                <div className="d-flex justify-content-center">
+                  <img
+                    src={process.env.PUBLIC_URL + "/img/final.png"}
+                    alt="..."
+                    width="1000"
+                  ></img>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item" data-bs-interval="8000">
+              <div className="container contenido-slider">
+                <h3 className="titulo-logo text-center">
+                  Producido y desarrollado por
+                </h3>
+                <div className="d-flex justify-content-center">
+                  <img
+                    className="proyecto-final"
+                    src={
+                      process.env.PUBLIC_URL + "/img/nuestro logo blanco.svg"
+                    }
+                    alt="..."
+                    width="300"
+                  ></img>
+                </div>
+                <p className="creditos text-center">
+                  Mónica Alejandra Gallardo - Ezequiel Alejandro Bustos -
+                  Eduardo Castillo - Gabriel Pescio - Brenda Hipper
+                </p>
+                <div className="d-flex justify-content-center">
+                  <button
+                    className="boton-a-inicio btn btn-outline-primary"
+                    onClick={volverAInicio}
+                  >
+                    Volver a CQV
+                  </button>
+                </div>
               </div>
             </div>
           </div>

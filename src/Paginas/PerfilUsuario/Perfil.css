@@ -24,11 +24,11 @@
   text-transform: uppercase;
   letter-spacing: -4px;
   text-align: center;
-  text-shadow: 2px 1px 0px #d2d2d2, 4px 2px 0px #4f3256, 3px 1px 6px #000000;
+  text-shadow: 2px 1px 0px #d2d2d2, 4px 2px 0px #161645, 3px 1px 6px #000000;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  text-shadow: 2px 0px 5px #1c99ca, 0px 2px 5px #1c99ca, -2px 0px 5px #1c99ca,
-    0px -2px 5px #1c99ca;
+  text-shadow: 2px 0px 5px #00ff00, 0px 2px 5px #00ff00, -2px 0px 5px #00ff00,
+    0px -2px 5px #00ff00;
 }
 
 .game-title .line-1 {
@@ -89,12 +89,12 @@ ul {
 }
 @keyframes neon {
   from {
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0052ff,
-      0 0 35px #0052ff, 0 0 40px #0052ff, 0 0 50px #0052ff, 0 0 75px #0052ff;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00ff00,
+      0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
   }
   to {
-    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #0052ff,
-      0 0 17px #0052ff, 0 0 20px #0052ff, 0 0 25px #0052ff, 0 0 37px #0052ff;
+    box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #00ff00,
+      0 0 17px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 37px #00ff00;
   }
 }
 @keyframes curtain {

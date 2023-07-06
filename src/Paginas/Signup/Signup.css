@@ -70,14 +70,9 @@
   cursor: pointer;
 }
 
-.btn-primary {
-  background: linear-gradient(
-    135deg,
-    rgba(175, 106, 252, 1) 39%,
-    rgba(116, 17, 255, 1) 100%
-  ) !important;
-  border: none;
-  border-radius: 50px;
+.boton-registro {
+  border:1px solid lime !important;
+  background: #161645 !important;
 }
 
 small {
