@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;700&display=swap");
+
+#carouselPresentacion {
+  height: 100vh;
+}
+
+#carouselPresentacion .carousel-inner,
+#carouselPresentacion .carousel-item {
+  max-height: 100vh !important;
+  height: 100vh !important;
+  background-image:url(/public/img/images.jpg);
+}
+
+.carousel-item::before{
+  display: inline-grid;
+  content: '';
+  width: 100%;
+  height: 95px;
+}
+
+.contenedor-carga {
+  max-width: 100%;
+}
+
+.contenido-slider {
+  padding: 0 10% !important;
+}
+
+.logolink {
+  opacity: 0;
+}
+
+.primero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.letra {
+  font-family: "Expletus Sans", cursive;
+  font-weight: 700;
+  font-size: 50px;
+  background: linear-gradient(#0b72a5, #ce283c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: whitesmoke;
+  font-weight: 700;
+}
+
+.tipografia p {
+  font-family: var(--fuente-principal);
+}
+
+.tipografia span {
+  font-family: var(--fuente-secundaria);
+  margin-left: 5rem;
+}
+
+.lista-presentacion {
+  color: var(--color-cuarto);
+  font-weight: 700;
+
+  & li {
+    list-style: none;
+    color:whitesmoke;
+  }
+
+  & li::before {
+    /* Unicode para viñeta */
+    content: "\2022";
+    font-size: x-large;
+
+    /* identacion y color */
+    color: #ce283c;
+    display: inline-block;
+    width: 0.75em;
+    margin-left: -1em;
+  }
+}
+
+.color-verde {
+  color:black;
+  font-family: var(--fuente-secundaria);
+  border-radius: 100%;
+  background-color: var(--color-primario);
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.color-violeta {
+  color:white;
+  border: 1px white solid;
+  border-radius: 100%;
+  background-color: var(--color-secundario);
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.color-gris {
+  color:black;
+  font-family: var(--fuente-secundaria);
+  border-radius: 100%;
+  background-color: var(--color-terciario);
+  border: 1px black solid;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.color-oscuro {
+  color:black;
+  border: 1px white solid;
+  border-radius: 100%;
+  background-color: var(--color-cuarto);
+  width: 6rem;
+  height: 6rem;
+  margin: 0;
+  line-height: 6rem;
+}
+.paleta{
+  color:whitesmoke;
+  font-family: var(--fuente-primaria);
+}
+
+.icon-target {
+  margin-right: 20px;
+}
+
+.titulo-logo{
+  margin-bottom: 3.5rem;
+}
+
+.creditos{
+  margin-top: 1rem;
+  white-space: nowrap;
+  will-change: transform;
+  animation: slidein 10s linear infinite;
+ /* animation-name: slidein;*/
+}
+
+@keyframes slidein{
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); } 
+}
+
+.boton-a-inicio{
+  color:#ce283c !important;
+}

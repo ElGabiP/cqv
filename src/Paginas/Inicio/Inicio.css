@@ -1,0 +1,16 @@
+.logovertical{
+    opacity: 0.2;
+    z-index: 9999;
+    position: absolute;
+    bottom: -27px;
+    left: 6px;
+    padding-left:10px;
+}
+
+.logovertical img{
+height: 65px;
+}
+
+.separador{
+    height: 50px;
+}

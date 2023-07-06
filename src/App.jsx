@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "./Componentes/Header/Header";
 import { Inicio } from "./Paginas/Inicio/Inicio";
 import { Generos } from "./Paginas/Generos/Generos";
@@ -11,9 +11,10 @@ import { Plataformas } from "./Paginas/Plataformas/Plataformas";
 import { ListaPorPlataformas } from "./Paginas/ListaPlataformas/ListaPorPlataformas";
 import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
 import { Search } from "./Paginas/Search/Search";
-import { NoEncontrado } from "./Paginas/NoEncontrado/NoEncontrado";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+
+
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
         <Route path="/plataformas" element={<Plataformas/>}></Route>
         <Route path="/detallegenero/:nombregenero/:generoId" element={<DetalleGenero/>}></Route>
         <Route path="/search/:searchText" element={<Search/>}></Route>
-          <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
+        <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
+        <Route path="/presentaciong7" element={<Presentacion/>}></Route>
+
       </Routes>
     </BrowserRouter>
   );
