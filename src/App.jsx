@@ -4,7 +4,9 @@ import { Header } from "./Componentes/Header/Header";
 import { Inicio } from "./Paginas/Inicio/Inicio";
 import { Generos } from "./Paginas/Generos/Generos";
 import { DetalleJuego } from "./Paginas/Detalle/Detalle";
-import { Login } from "./Paginas/Login/Login";
+import {Login} from "./Paginas/Login/Login";
+import { Signup } from "./Paginas/Signup/Signup";
+import { Perfil } from "./Paginas/PerfilUsuario/Perfil";
 import { Plataformas } from "./Paginas/Plataformas/Plataformas";
 import { ListaPorPlataformas } from "./Paginas/ListaPlataformas/ListaPorPlataformas";
 import { DetalleGenero } from "./Paginas/Generos/DetalleGenero";
@@ -19,20 +21,15 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Inicio />}></Route>
-        <Route path="/generos" element={<Generos />}></Route>
-        <Route path="/juego/:juegoId" element={<DetalleJuego />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/plataformas" element={<Plataformas />}></Route>
-        <Route
-          path="/detallegenero/:nombregenero/:generoId"
-          element={<DetalleGenero />}
-        ></Route>
-        <Route path="/search/:searchText" element={<Search />}></Route>
-        <Route
-          path="/plataformas/:plataformasId"
-          element={<ListaPorPlataformas />}
-        ></Route>
-        <Route path="*" element={<NoEncontrado />} />
+        <Route path="/generos" element={<Generos/>}></Route>
+        <Route path="/juego/:juegoId" element={<DetalleJuego/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/signup" element={<Signup/>}></Route>
+        <Route path="/perfilusuario" element={<Perfil/>}></Route>
+        <Route path="/plataformas" element={<Plataformas/>}></Route>
+        <Route path="/detallegenero/:nombregenero/:generoId" element={<DetalleGenero/>}></Route>
+        <Route path="/search/:searchText" element={<Search/>}></Route>
+          <Route path="/plataformas/:plataformasId" element={<ListaPorPlataformas/>}></Route>
       </Routes>
     </BrowserRouter>
   );

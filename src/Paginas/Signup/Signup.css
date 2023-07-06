@@ -1,18 +1,11 @@
-.login {
+.signup {
   /* background: #161645; */
   background: #151515;
   font-family: var(--fuente-principal);
-  color: #151515;
 }
 
 .main_div {
   height: 75vh;
-}
-
-.ms-2 {
-  text-decoration: none;
-  font-size: large;
-  font-weight: 900;
 }
 
 .container .card {
@@ -24,6 +17,16 @@
   color: #57557a;
 }
 
+.ms-2 {
+  text-decoration: none;
+  font-size: large;
+  font-weight: 900;
+}
+
+.text-end {
+  font-weight: 500;
+}
+
 .separador {
   width: 100%;
   text-align: center;
@@ -32,10 +35,10 @@
 
 .main-heading {
   font-weight: 500;
-  font-size: 30px !important;
+  font-size: 25px;
 }
 
-.formLogin {
+.formRegister {
   padding: 0 25px 0 35px;
 }
 

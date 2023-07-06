@@ -49,6 +49,7 @@
 .navbar-bg {
   --bs-bg-opacity: 1;
   background-color: #161645;
+  color: #161645 !important;
 }
 
 .btn {
