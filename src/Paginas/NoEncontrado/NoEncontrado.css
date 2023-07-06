@@ -1,0 +1,8 @@
+.texto-no-encontrado {
+    color:  #9d9d9d !important;
+}
+
+.img-gameover {
+    max-height: 31cqmax;
+    filter: drop-shadow(0 0 4px #c8fdc8) drop-shadow(0 0 3rem lime);
+}
