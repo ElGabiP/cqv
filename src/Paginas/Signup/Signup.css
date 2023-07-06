@@ -4,6 +4,12 @@
   font-family: var(--fuente-principal);
 }
 
+.signup p{
+  background-color: #0e0e0e;
+  border-radius: 10px;
+  text-align: center !important;
+}
+
 .main_div {
   height: 75vh;
 }
@@ -45,7 +51,7 @@
 .signup .form-control {
   border: 1px solid #57557a;
   border-radius: 2px;
-  background: #212042;
+  background: white;
   margin-bottom: 20px;
   letter-spacing: 1px;
   font-weight: 600 !important;
@@ -55,7 +61,6 @@
 .signup .form-control:focus {
   border: 1px solid #57557a;
   border-radius: 2px;
-  background: #212042;
   box-shadow: none;
   letter-spacing: 1px;
   color: #fff;

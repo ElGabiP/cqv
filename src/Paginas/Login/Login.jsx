@@ -35,7 +35,7 @@ export const Login = () => {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-lg-6 col-md-8 col-xxl-5">
-            <h1 className="main-heading">Inicia Sesión</h1>
+            <h1 className="blacklime">Inicia Sesión</h1>
             <form className="formLogin" onSubmit={loginUser}>
               <div class="mb-3">
                 <input
@@ -54,7 +54,7 @@ export const Login = () => {
                   value={password}
                   class="form-control"
                   id="exampleFormControlInput1"
-                  placeholder="Ingresa contrasenia"
+                  placeholder="Ingresa contraseña"
                   onChange={(e) => setPassword(e.target.value)}
                 ></input>
               </div>
@@ -73,7 +73,7 @@ export const Login = () => {
           </div>
         </div>
       </div>
-      <video id="video" autoPlay loop muted>
+      <video class="video" autoPlay loop muted>
         <source src={process.env.PUBLIC_URL + '/video/videobkgrnd.mp4'} type='video/mp4' />
       </video>
     </div>
