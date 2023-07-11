@@ -37,7 +37,6 @@ function App() {
         <Route path="/presentaciong7" element={<Presentacion/>}></Route>
         <Route path="/guardados/:collection" element={<Guardados/>}></Route>
         <Route path="*" element={<NoEncontrado />} />
-
       </Routes>
     </BrowserRouter>
   );
