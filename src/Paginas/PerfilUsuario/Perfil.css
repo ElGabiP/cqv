@@ -46,7 +46,8 @@
   text-align: center;
 }
 
-ol, ul {
+ol,
+ul {
   padding-left: 1rem;
 }
 

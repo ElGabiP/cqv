@@ -30,7 +30,6 @@ p {
   color: var(--color-terciario);
   font-size: 1.8rem;
   margin: 14px;
-
 }
 
 @media only screen and (max-width: 820px) {
@@ -53,12 +52,10 @@ p {
   }
 
   .nav-item {
-
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
     margin: -8px 28px;
-
   }
 
   .navbar-expand .navbar-nav .dropdown-menu {

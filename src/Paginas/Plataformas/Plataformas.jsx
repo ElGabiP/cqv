@@ -49,8 +49,7 @@ export const Plataformas = () => {
                 <div className="col-6 col-sm-4 col-lg-3" key={plataforma.id}>
                   <Link
                     to={`/plataformas/${plataforma.slug}`}
-                    className="enlace-plataformas"
-                  >
+                    className="enlace-plataformas">
                     <div className="icono-plataforma contenido-plataforma">
                       {obtenerIcono(plataforma.platforms)}
                     </div>

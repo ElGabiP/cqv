@@ -40,15 +40,15 @@ export const ListaPorPlataformas = () => {
         </div>
         {plataformas && plataformas.length > 0
           ? plataformas.map((plataforma) => {
-            if (plataforma.slug === plataformasId) {
-              return (
-                <div className="row" key={plataforma.id}>
-                  <h1 className="text-center blacklime">{plataforma.name}</h1>
-                  <Botonera plataforma={plataforma.platforms} />
-                </div>
-              );
-            }
-          })
+              if (plataforma.slug === plataformasId) {
+                return (
+                  <div className="row" key={plataforma.id}>
+                    <h1 className="text-center blacklime">{plataforma.name}</h1>
+                    <Botonera plataforma={plataforma.platforms} />
+                  </div>
+                );
+              }
+            })
           : ""}
       </div>
     );

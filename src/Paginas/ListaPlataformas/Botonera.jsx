@@ -23,7 +23,8 @@ export const Botonera = ({ plataforma }) => {
     new Array(plataforma.length).fill(false)
   );
 
-  const listaInicial = () => plataforma.length === 1 ? plataforma[0].id : null;
+  const listaInicial = () =>
+    plataforma.length === 1 ? plataforma[0].id : null;
   console.log("%c<?>", "color: lightgreen; background: black");
   console.log(listaInicial());
   const [listaPlataformas, setListaPlataformas] = useState(listaInicial());
@@ -68,10 +69,13 @@ export const Botonera = ({ plataforma }) => {
             <h3 className="fuente principal">Elegí una plataforma</h3>
           </div>
           <div
-            className={cargando ? "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around botonera-oculta" : "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around"}
+            className={
+              cargando
+                ? "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around botonera-oculta"
+                : "btn-group botonera row row-cols-auto g-2 position-sticky sticky-top justify-content-around"
+            }
             role="group"
-            aria-label="Basic checkbox toggle button group"
-          >
+            aria-label="Basic checkbox toggle button group">
             {plataforma.map(({ name, id }, index) => {
               return (
                 <div key={id}>
@@ -87,8 +91,7 @@ export const Botonera = ({ plataforma }) => {
                     />
                     <label
                       className="btn boton-plataforma btn-outline-success"
-                      htmlFor={`custom-checkbox-${index}`}
-                    >
+                      htmlFor={`custom-checkbox-${index}`}>
                       {name}
                     </label>
                   </div>
@@ -109,7 +112,9 @@ export const Botonera = ({ plataforma }) => {
             </div>
             {juegos && juegos.length > 0
               ? juegos.map((juego, key) => (
-                  <div className="col-6 col-sm-4 col-lg-3 scale-in-center" style={{ animationDelay: `0.${1 + key}s` }}>
+                  <div
+                    className="col-6 col-sm-4 col-lg-3 scale-in-center"
+                    style={{ animationDelay: `0.${1 + key}s` }}>
                     <Miniatura key={key} objetoJuego={juego} />
                   </div>
                 ))

@@ -6,8 +6,11 @@ import "./Navbar.css";
 import { auth } from "../../firebase/config";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { FAVORITO, LATE, MEGUSTA } from "../../Utilidades/administrador-preferencias";
-
+import {
+  FAVORITO,
+  LATE,
+  MEGUSTA,
+} from "../../Utilidades/administrador-preferencias";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -17,7 +20,7 @@ export const Navbar = () => {
     if (!authUser) {
       checkUserAuth();
     }
-  }, [])
+  }, []);
 
   const checkUserAuth = () => {
     onAuthStateChanged(auth, (user) => {
@@ -28,19 +31,21 @@ export const Navbar = () => {
         console.log("No esta logueado");
         navigate("/");
       }
-    })
-  }
+    });
+  };
 
   const userSignOut = () => {
-    signOut(auth).then(() => {
-      console.log("Desconexión exitosa");
-      [MEGUSTA, FAVORITO, LATE].map(preferencia => {
-        localStorage.removeItem(preferencia);
+    signOut(auth)
+      .then(() => {
+        console.log("Desconexión exitosa");
+        [MEGUSTA, FAVORITO, LATE].map((preferencia) => {
+          localStorage.removeItem(preferencia);
+        });
+        setAuthUser(null);
+        navigate("/");
       })
-      setAuthUser(null);
-      navigate("/");
-    }).catch(error => console.log("Error al intentar desconectarse ", error));
-  }
+      .catch((error) => console.log("Error al intentar desconectarse ", error));
+  };
 
   return (
     <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
@@ -78,9 +83,11 @@ export const Navbar = () => {
                 </Link>
                 <ul class="dropdown-menu">
                   <li className="fuente-principal regular text-center logout show">
-                    <Link to={'/perfilusuario'}>Mi perfil</Link>
+                    <Link to={"/perfilusuario"}>Mi perfil</Link>
                   </li>
-                  <li className="fuente-principal regular text-center logout show" onClick={userSignOut}>
+                  <li
+                    className="fuente-principal regular text-center logout show"
+                    onClick={userSignOut}>
                     Logout
                   </li>
                 </ul>

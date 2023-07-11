@@ -15,7 +15,8 @@ export const NoEncontrado = () => {
       />
       <div className="fuente-secundaria align-self-center">
         <p className="texto-no-encontrado">
-          ¡Aquí en CQV nada puede malir sal! Pero, a veces, perdemos el control...
+          ¡Aquí en CQV nada puede malir sal! Pero, a veces, perdemos el
+          control...
         </p>
         <p className="texto-no-encontrado">
           ¡No te preocupés! Podés dar un paso atrás y reintentar.
@@ -23,8 +24,7 @@ export const NoEncontrado = () => {
         <button
           type="button"
           className="me-auto btn btn-outline-success btn-lg"
-          onClick={() => navigate(-1)}
-        >
+          onClick={() => navigate(-1)}>
           <FaChevronLeft /> Volver atrás
         </button>
       </div>
